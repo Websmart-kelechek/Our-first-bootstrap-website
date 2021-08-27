@@ -1,42 +1,142 @@
 .banner {
-    min-height: 544px;
-    padding-top: 140px;
-    padding-bottom: 89px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    background-image: url('../img/bg.jpg');
+  min-height: 544px;
+  padding-top: 140px;
+  padding-bottom: 89px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    margin: 0 0 45px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.5em;
+  }
+
+  &__info {
+    margin: 0 0 45px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 60px;
+  }
+
+  &__info-secondary {
+    margin: 0 0 45px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.cat {
+  padding: 60px 0;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 419px;
+    background-image: url("../img/photo_2021-08-27_09-48-44.jpg");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-  
-    &__title {
-      margin: 0 0 45px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 30px;
-      line-height: 30px;
-      letter-spacing: 0.5em;
+    background-position: center;
+    border-radius: 30px;
+
+    &--Daniyar {
+      background-image: url("../img/Daniyar.jpg");
     }
-  
-    &__info {
-      margin: 0 0 45px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 900;
-      font-size: 55px;
-      line-height: 60px;
+
+    &--Mirjaz {
+      background-image: url("../img/Daniyar.jpg");
     }
-  
-    &__info-secondary {
-      margin: 0 0 45px;
-      font-family: sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 30px;
-      line-height: 30px;
+    &--Adilet {
+      background-image: url("../img/Adilet.jpg");
+    }
+    &--Meerim {
+      background-image: url("../img/Meerim.jpg");
+    }
+    &--Azamat {
+      background-image: url("../img/photo_2021-08-27_09-48-44.jpg");
+    }
+    &--Jidegul {
+      background-image: url("../img/Jide.jpg");
+    }
+    &--Kanaiym {
+      background-image: url("../img/jamalbek.jpg");
+    }
+    &--Jamalbek {
+      background-image: url("../img/jamalbek.jpg");
+    }
+    &--Eliza {
+      background-image: url("../img/Eliza.jfif");
+    }
+    &--Nuraida {
+      background-image: url("../img/Daniyar.jpg");
     }
   }
 
-  
+  &__title {
+    margin: 0;
+  }
+
+  &__link {
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: green;
+    }
+  }
+}
+
+.section-title {
+  position: relative;
+  margin: 0 0 60px 0;
+  padding: 28px 0 29px;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: capitalize;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115px;
+    height: 3px;
+    background-color: green;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115px;
+    height: 3px;
+    background-color: green;
+    content: "";
+  }
+}

@@ -9,62 +9,178 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-      <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-success ">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                  <img class="w-25" src="/img/logo.png" alt="">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="w-25" src="/img/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
                 </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                  <li class="nav-item ">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="#">About us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Project</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Portfolio</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
                   </li>
                 </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="banner__title">Lorem ipsum dolor sit.</h2>
+              <p class="banner__info">Lorem ipsum dolor sit amet.</p>
+              <p class="banner__info-secondary">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
+                praesentium.
+              </p>
+              <a href="#" class="btn banner__btn"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cat text-center">
+        <div class="container">
+          <h2 class="section-title">About us</h2>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="cat__item cat__item--Erzhan overlay mb-4">
+                <h3 class="cat__item-title">
+                  <a class="cat__link" href="#">Erzhan</a>
+                </h3>
               </div>
             </div>
-          </nav>
-      </header>
-
-      <main>
-        <section class="banner">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <h2 class="banner__title">Lorem ipsum dolor sit.</h2>
-                <p class="banner__info">Lorem ipsum dolor sit amet.</p>
-                <p class="banner__info-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, praesentium.</p>
-                <a href="#" class="btn banner__btn"></a>
+            <div class="col-12 col-md-4">
+              <div class="cat__item cat__item--Daniyar overlay mb-4">
+                <h3 class="cat__item-title">
+                  <a class="cat__link" href="#">Daniyar</a>
+                </h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="cat__item cat__item--Mirjaz overlay mb-4">
+                <h3 class="cat__item-title">
+                  <a class="cat__link" href="#">Mirjaz</a>
+                </h3>
               </div>
             </div>
           </div>
-        </section>
-    
-        
-    
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="cat__item cat__item--Adilet overlay mb-4">
+                <h3 class="cat__item-title">
+                  <a class="cat__link" href="#">Adilet</a>
+                </h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="cat__item cat__item--Meerim overlay mb-4">
+                <h3 class="cat__item-title">
+                  <a class="cat__link" href="#">Meerim</a>
+                </h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="cat__item cat__item--Azamat overlay mb-4">
+                <h3 class="cat__item-title">
+                  <a class="cat__link" href="#">Azamat</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="cat__item cat__item--Jidegul overlay mb-4">
+                <h3 class="cat__item-title">
+                  <a class="cat__link" href="#">Jidegul</a>
+                </h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="cat__item cat__item--Kanaiym overlay mb-4">
+                <h3 class="cat__item-title">
+                  <a class="cat__link" href="#">Kanaiym</a>
+                </h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="cat__item cat__item--Jamalbek overlay mb-4">
+                <h3 class="cat__item-title">
+                  <a class="cat__link" href="#">Jamalbek</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="cat__item cat__item--Eliza overlay mb-4">
+                <h3 class="cat__item-title">
+                  <a class="cat__link" href="#">Eliza</a>
+                </h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="cat__item cat__item--Nuraida overlay mb-4">
+                <h3 class="cat__item-title">
+                  <a class="cat__link" href="#">Nuraida</a>
+                </h3>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    >
 
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
